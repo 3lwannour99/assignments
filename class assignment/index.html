@@ -27,7 +27,7 @@
         name="MiddleName"
         id="MiddleName"
         maxlength="16"
-        placeholder="plz enter ur middle name"
+        placeholder="please enter middle name"
       />
       <br />
       <br />
@@ -46,14 +46,26 @@
       <br />
       <label for="age">Age</label>
       <br />
-      <input type="number" name="age" id="age" />
+      <input
+        type="number"
+        name="age"
+        id="age"
+        placeholder="please enter your age"
+        min="18"
+        max="40"
+      />
       <br />
       <br />
 
       <label for="birthDate">Birth Date</label>
       <br />
-      <input type="date" name="birthDate" id="birthDate" 
-      max="2025-02-03" required />
+      <input
+        type="date"
+        name="birthDate"
+        id="birthDate"
+        max="2025-02-03"
+        required
+      />
       <br />
       <br />
 
@@ -82,10 +94,59 @@
       <br />
       <br />
 
+      <label for="gender">Gender</label>
+      <br />
+      <input type="radio" name="gender" id="gender" value="1" /> Male <br />
+      <input type="radio" name="gender" id="gender" value="0" /> Female
+
+      <br />
+      <br />
+
+      <label for="skills">Skills</label><br />
+      <input type="checkbox" id="skills" name="skills" value="0" checked />skill
+      1 <br />
+      <input type="checkbox" id="skills" name="skills" value="1" checked />skill
+      2 <br />
+      <input type="checkbox" id="skills" name="skills" value="2" />skill 3
+      <br />
+      <input type="checkbox" id="skills" name="skills" value="3" />skill 4
+      <br />
+      <input type="checkbox" id="skills" name="skills" value="4" />skill 5
+      <br />
+      <input type="checkbox" id="skills" name="skills" value="5" />skill 6
+      <br />
+      <br />
+
+      <label>Please select your City</label><br />
+      <select name="city" id="city">
+        <option value="amman">Amman</option>
+        <option value="balqa">Balqa</option>
+        <option value="irbid">Irbid</option>
+        <option value="mafraq">Mafraq</option>
+        <option value="ajloun">Ajloun</option>
+        <option value="aqaba">Aqaba</option>
+        <option value="madaba">Madaba</option>
+        <option value="zarqa">Zarqa</option>
+        <option value="karak">Karak</option>
+        <option value="tafilah">Tafilah</option>
+        <option value="maan">Ma'an</option>
+        <option value="jerash">Jerash</option>
+      </select>
+      <br />
+      <br />
+      <label for="country">Please select your country</label><br />
+      <input type="text" name="country" list="country" />
+      <datalist id="country">
+        <option value="Jordan">Jordan</option>
+        <option value="palstine">palstine</option>
+        <option value="lebanon">lebanon</option>
+        <option value="syria">syria</option>
+      </datalist>
+      <br /><br />
+
       <input type="submit" value="create user" />
     </form>
 
-    <br>
-
+    <br />
   </body>
 </html>
