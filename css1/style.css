@@ -1,0 +1,11 @@
+#HTML{
+    background-image: url(pic1.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#HTU{
+    background-image: url(pic2.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+}
