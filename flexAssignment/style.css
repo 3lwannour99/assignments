@@ -1,0 +1,28 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+} 
+
+.col-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.row-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.flex-2{
+    flex: 2;
+}
+
