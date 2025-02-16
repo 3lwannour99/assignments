@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    border: 1px solid black;
+    background: #ECE5DD;
+    
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.sidebar{
+    width: 50px;
+    background-color: #ECE5DD;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+
+}
+.list{
+    flex: 1; 
+    background-color: #ECE5DD;
+    border-right: 1px solid #ccc;
+    overflow: scroll;
+    height: 100vh;
+
+}
+
+.chats{
+    flex: 3; 
+    background-color: #FFFFFF;
+    border: 1px solid green;
+    overflow: scroll;
+    height: 100vh;
+
+}
+/* .flex{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-width: 1000px;
+    border: 1px solid rgb(0, 103, 0);
+    align-items: center;
+
+} */
+
+/* .item{
+    width:50px;
+    display: flex;
+    flex-direction: column;
+
+} */
+
+.navBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    flex-wrap: wrap;
+    width: 10px;
+}
+
+.icon{
+    color: #25D366;
+   font-size: 20px;
+ 
+
+
+}
+.icon1{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+
+.chatList{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position:sticky;
+}
+
+img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+h5{
+    background: #25D366;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pic{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+.pic1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-side{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.right-side{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+
+}
+
+.message{
+    border: 1px solid black;
+    border-radius: 9px;
+    
+}
+
+.sender-1{
+    display: flex;
+    justify-content: end;
+}
+
+.sender-2{
+    display: flex;
+    justify-content: start;
+}
+
+.type{
+    width: 100%;
+    height: 40px;
+    border-radius: 1px;
+}
+
+.foot{
+    display: flex;
+    gap:5px
+    
+}
+.image{
+border: 1px solid black;
+}
