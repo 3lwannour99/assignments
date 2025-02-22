@@ -3,10 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
 } 
 
+button{
+border-radius: 10px;
+padding: 5px;
+background: white;
+cursor: pointer;
 
+}
 
 .parent{
     display: flex;
@@ -14,16 +19,28 @@
     justify-content: center;
     align-items: center;
 
+
 }
 
 .parent-1{
     display: flex;
-    justify-content: start;
+    justify-content: center;
+
+}
+h3{
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 2px;
+    cursor: pointer;
+    background: red;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background: red;
+
 }
 .content{
     display: flex;
@@ -35,18 +52,19 @@
    
     height: 100px;
     width: 200px;
-    background: red;
     flex:1 1 150px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .flex{
     display: flex;
     flex-direction: row;
     gap:10px;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     border: 1px solid black;
     max-width: 750px;
+
 }
 
