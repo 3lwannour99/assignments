@@ -8,29 +8,36 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/872882e136.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <div class="header">
-      <div class="left-side">
-        <select aria-label="Large select example">
-          <option selected>Explore</option>
-          <option value="1">Home</option>
-          <option value="2">Missions</option>
-          <option value="3">Humans in space</option>
-          <option value="3">earht & climate</option>
-          <option value="3">The solar system</option>
-          <option value="3">the universe</option>
-          <option value="3">Scince</option>
-          <option value="3">Aeronautics</option>
-          <option value="3">Technology</option>
-          <option value="3">Learning Resources</option>
-          <option value="3">About NASA</option>
-          <option value="3">Espanol</option>
+    <div
+      class="header d-flex justify-content-between flex-wrap bg-black align-items-center p-3 "
+     >
+      <div class="left-side d-flex flex-wrap gap-3 ">
+        <select
+          aria-label="Large select example "
+          class="fw-bold text-white border-0 "
+        >
+          <option class="text-black" selected>Explore</option>
+          <option class="text-black" value="1">Home</option>
+          <option class="text-black" value="2">Missions</option>
+          <option class="text-black" value="3">Humans in space</option>
+          <option class="text-black" value="3">earht & climate</option>
+          <option class="text-black" value="3">The solar system</option>
+          <option class="text-black" value="3">the universe</option>
+          <option class="text-black" value="3">Scince</option>
+          <option class="text-black" value="3">Aeronautics</option>
+          <option class="text-black" value="3">Technology</option>
+          <option class="text-black" value="3">Learning Resources</option>
+          <option class="text-black" value="3">About NASA</option>
+          <option class="text-black" value="3">Espanol</option>
         </select>
 
         <input
@@ -46,51 +53,71 @@
         <img src="logo.png" class="logo" />
       </div>
       <!-- end mid -->
-      <div class="right-side">
-        <select aria-label="Default select example">
-          <option selected>News & Events</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+      <div class="right-side d-flex align-items-center flex-wrap gap-3">
+        <select
+          aria-label="Default select example"
+          class="fw-bold text-white border-0"
+        >
+          <option class="text-black" selected>News & Events</option>
+          <option class="text-black" value="1">One</option>
+          <option class="text-black" value="2">Two</option>
+          <option class="text-black" value="3">Three</option>
         </select>
 
-        <select aria-label="Default select example">
-          <option selected>Multimedia</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+        <select
+          aria-label="Default select example"
+          class="fw-bold text-white border-0"
+        >
+          <option class="text-black" selected>Multimedia</option>
+          <option class="text-black" value="1">One</option>
+          <option class="text-black" value="2">Two</option>
+          <option class="text-black" value="3">Three</option>
         </select>
-        <p class="live">NASA+ <span class="livespan">LIVE</span></p>
+        <p class="live fw-bold text-white p-0 m-0">
+          NASA+ <span class="livespan fw-light text-light">LIVE</span>
+        </p>
       </div>
       <!-- end right  -->
     </div>
     <!-- end header -->
 
-    <div class="main">
-      <div class="describtion">
-        <p class="describtion-1">
+    <div
+      class="main d-flex flex-column justify-content-center align-items-start position-relative"
+    >
+      <div
+        class="describtion d-flex justify-content-center align-items-start flex-column position-absolute ms-3"
+      >
+        <p class="describtion-1 lh-1 fw-bold text-light">
           Blue Ghost Lands<br />
           On The Moon
         </p>
-        <p class="describtion-2">
+        <p class="describtion-2 text-light">
           Carrying NASA science and technology to the Moon, Firefly Aerospace's
           lunar lander<br />
           Blue Ghost, touched down on the lunar surface at 3:34 a.m. EST on
           Sunday March 2.
         </p>
-        <button type="button" class="btn btn-danger">Mission Updates</button>
+        <button type="button" class="btn btn-danger p-2">
+          Mission Updates
+        </button>
       </div>
     </div>
     <!-- end main------------------------------- -->
-    <div class="featured">
-      <div class="head-featured">
-        <p class="p1">Featured News</p>
-        <a class="p2">More NASA News <span class="arrow-icon">→</span></a>
+    <div class="featured d-flex flex-column m-5">
+      <div
+        class="head-featured d-flex justify-content-between flex-wrap align-items-center pt-3 px-2"
+      >
+        <p class="p1 text-black fw-bold">Featured News</p>
+        <a class="p2 fw-bold fs-3"
+          >More NASA News <span class="arrow-icon">→</span></a
+        >
       </div>
       <!-- ----------------------------------------- -->
 
-      <div class="row pic-featured">
-        <div class="col-md-6 pic0">
+      <div class="row pic-featured d-flex flex-wrap m-auto">
+        <div
+          class="col-md-6 pic0 d-flex justify-content-start position-relative"
+        >
           <img src="background.webp" alt="pic" />
           <div class="text0">
             <p>News Release 4 Min Read</p>
@@ -100,7 +127,9 @@
             </p>
           </div>
         </div>
-        <div class="col-md-2 pic1">
+        <div
+          class="col-md-3 pic1 d-flex justify-content-start position-relative"
+        >
           <img src="spherex.webp" alt="pic" />
           <div class="text0">
             <p>News Release 4 Min Read</p>
@@ -110,7 +139,9 @@
             </p>
           </div>
         </div>
-        <div class="col-md-4 pic2">
+        <div
+          class="col-md-3 pic2 d-flex flex-column align-items-start gap-1 position-relative"
+        >
           <img src="Hubble.jpg" alt="pic" />
           <img src="acd.webp" alt="pic" />
           <div class="text0">
@@ -124,7 +155,7 @@
       </div>
       <!-- end pic-featured -------------------------------- -->
 
-      <div class="container">
+      <div class="container mt-3" >
         <div class="row">
           <div class="col-sm-6 col-md-3">
             <div class="card mb-3 border-0" style="max-width: 540px">
@@ -152,7 +183,6 @@
                   </div>
                 </div>
               </div>
-                        
             </div>
           </div>
           <!-- second card -->
@@ -254,7 +284,7 @@
     <!-- end featured -->
     <!-- start section 3 -->
 
-    <div class="container-fluid container2">
+    <div class="container-fluid container2 bg-black px-3 py-3">
       <div class="row align-items-center">
         <!-- النص -->
         <div class="col-lg-4 col-md-12 text-white text-lg-start text-center">
@@ -276,7 +306,7 @@
 
         <!-- الفيديو -->
         <div class="col-lg-8 col-md-12">
-          <div class="iframe0">
+          <div class="iframe0 position-relative">
             <iframe
               src="https://www.youtube.com/embed/hEyLK506WLQ?si=yUnYQh9NifAVTpcq"
               title="YouTube video player"
@@ -293,10 +323,10 @@
 
     <!-- end container 2 -->
     <div class="container section5">
-      <div class="section4">
-        <h1 class="text-left text-dark" style="font-weight: 700">
-          The Solar System
-        </h1>
+      <div
+        class="section4 d-flex justify-content-between align-items-center m-3"
+      >
+        <h1 class="text-left text-dark fw-bold">The Solar System</h1>
         <a
           class="text-right text-dark"
           style="text-decoration: none; font-weight: 700"
@@ -307,33 +337,33 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card">
+            <div class="card position-relative">
               <img src="img1.jpg" class="card-img" alt="Moons" />
-              <div class="card-text">
+              <div class="card-text position-absolute fw-bold text-light">
                 Moons <span class="arrow-icon">→</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card">
+            <div class="card position-relative">
               <img src="img2.webp" class="card-img" alt="Mars" />
-              <div class="card-text">
+              <div class="card-text position-absolute fw-bold text-light">
                 Mars <span class="arrow-icon">→</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card">
+            <div class="card position-relative">
               <img src="img3.jpg" class="card-img" alt="Planets" />
-              <div class="card-text">
+              <div class="card-text position-absolute fw-bold text-light">
                 Planets <span class="arrow-icon">→</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card">
+            <div class="card position-relative">
               <img src="img4.webp" class="card-img" alt="Universe" />
-              <div class="card-text">
+              <div class="card-text position-absolute fw-bold text-light">
                 Universe <span class="arrow-icon">→</span>
               </div>
             </div>
@@ -342,8 +372,10 @@
       </div>
     </div>
     <!-- end container for section 4 -->
-    <div class="container-fluid section6 bg-dark">
-      <div class="text-res">
+    <div
+      class="container-fluid section6 bg-dark d-flex flex-column justify-content-center flex-wrap position-relative mb-4"
+    >
+      <div class="text-res position-absolute">
         <p class="title fs-1 text-white fw-bold">Earth Information Center</p>
         <p class="description fs-5 text-white">
           For more than 50 years, NASA satellites have provided data on Earth's
@@ -362,7 +394,7 @@
 
     <!-- start new section -->
     <div class="container-fluid">
-      <div class="row center-con">
+      <div class="row center-con d-flex align-items-center">
         <div class="col-lg-4 col-md-6 col-12 texts">
           <p class="text-uppercase" style="letter-spacing: 2px">today</p>
           <h1 class="fw-bolder">Image Of The Day</h1>
@@ -381,7 +413,9 @@
         </div>
 
         <!-- end section الكتابة -->
-        <div class="col-lg-8 col-md-6 col-12 container bg-light uni-image">
+        <div
+          class="col-lg-8 col-md-6 col-12 container bg-light uni-image d-flex justify-content-center"
+        >
           <img
             class="img-uni"
             src="https://www.nasa.gov/wp-content/uploads/2025/03/hubble-veil-small-potw2508a-1.jpg"
@@ -392,28 +426,44 @@
       </div>
     </div>
 
-    <p class="text-right">view image <span class="arrow-icon">→</span></p>
+    <p class="text-right text-end fw-bold fs-4 me-3">
+      view image <span class="arrow-icon">→</span>
+    </p>
 
     <!-- end section the image of today -->
 
     <!-- بداية سكشن  مجموعة الصور الثلاثية -->
 
-    <div class="section4">
-      <h1 class="text-left text-dark" style="font-weight: 700">
+    <div class="section4 mx-4">
+      <h1 class="text-left text-dark mx-4" style="font-weight: 700">
         More NASA Images
       </h1>
     </div>
     <!-- now start the pics -->
-    <div class="section-of-pics">
+    <div
+      class="section-of-pics d-flex justify-content-center flex-wrap gap-4 mx-4"
+    >
       <!-- اول مجموعة صور -->
 
-      <div class="flex">
-        <div class="pics">
-          <img class="img-group img-fluid" src="earth1.webp" alt="" />
-          <div class="col-flex">
-            <img class="img-group img-fluid" src="earth2.webp" alt="" />
+      <div class="flex d-flex flex-column">
+        <div class="pics d-flex  gap-1 flex-grow-1">
+          <img
+            class="img-group flex-grow-1 img-fluid"
+            src="earth1.webp"
+            alt=""
+          />
+          <div class="col-flex d-flex flex-column  gap-1">
+            <img
+              class="img-group flex-grow-1 img-fluid"
+              src="earth2.webp"
+              alt=""
+            />
 
-            <img class="img-group img-fluid" src="earth3.webp" alt="" />
+            <img
+              class="img-group flex-grow-1 img-fluid"
+              src="earth3.webp"
+              alt=""
+            />
           </div>
         </div>
         <div class="text">
@@ -423,22 +473,22 @@
       </div>
 
       <!-- ثاني مجموعة صور -->
-      <div class="flex">
-        <div class="pics">
+      <div class="flex d-flex flex-column">
+        <div class="pics d-flex  gap-1 flex-grow-1">
           <img
-            class="img-group img-fluid"
+            class="img-group flex-grow-1 img-fluid"
             src="https://www.nasa.gov/wp-content/uploads/2024/11/iss072e186870.jpg?w=1024"
             alt=""
           />
-          <div class="col-flex">
+          <div class="col-flex d-flex flex-column  gap-1">
             <img
-              class="img-group img-fluid"
+              class="img-group flex-grow-1 img-fluid"
               src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001515/GSFC_20171208_Archive_e001515~orig.jpg?w=560&h=560&fit=clip&crop=faces%2Cfocalpoint"
               alt=""
             />
 
             <img
-              class="img-group img-fluid"
+              class="img-group flex-grow-1 img-fluid"
               src="https://images-assets.nasa.gov/image/201103200001HQ/201103200001HQ~medium.jpg?w=1280&h=851&fit=clip&crop=faces%2Cfocalpoint"
               alt=""
             />
@@ -450,13 +500,21 @@
         </div>
       </div>
       <!-- ثالث مجموعة صور -->
-      <div class="flex">
-        <div class="pics">
-          <img class="img-group img-fluid" src="sun3.webp" alt="" />
-          <div class="col-flex">
-            <img class="img-group img-fluid" src="sun1.jpg" alt="" />
+      <div class="flex d-flex flex-column">
+        <div class="pics d-flex  gap-1 flex-grow-1">
+          <img class="img-group flex-grow-1 img-fluid" src="sun3.webp" alt="" />
+          <div class="col-flex d-flex flex-column  gap-1">
+            <img
+              class="img-group flex-grow-1 img-fluid"
+              src="sun1.jpg"
+              alt=""
+            />
 
-            <img class="img-group img-fluid" src="sun2.webp" alt="" />
+            <img
+              class="img-group flex-grow-1 img-fluid"
+              src="sun2.webp"
+              alt=""
+            />
           </div>
         </div>
         <div class="text">
@@ -467,9 +525,11 @@
     </div>
 
     <!-- نهاية سكشن الصور الثلاثية -->
-    <div class="container-fluid section7">
-      <div class="posit">
-        <p class="col-md-4 fw-bold text1 fs-0.1">
+    <div
+      class="container-fluid section7 text-light d-flex flex-column flex-wrap justify-content-center position-relative lh-1 mb-3"
+    >
+      <div>
+        <p class="col-md-4 fw-bold text1 fs-0.1 fw-bolde">
           Explore the Universe from your Inbox
         </p>
 
@@ -479,60 +539,61 @@
         </p>
 
         <p class="col-md-5">
-          We will never share your email address. <label>Privacy Policy</label>
+          We will never share your email address.
+          <label class="text-decoration-dashed">Privacy Policy</label>
         </p>
 
-        <a class="text2">Sign Up <span class="arrow-icon">→</span></a>
+        <a class="text2 fw-bold text-light fs-2"
+          >Sign Up <span class="arrow-icon">→</span></a
+        >
       </div>
     </div>
     <!-- نهاية سكشن خلفية النجوم -->
 
     <div class="container-fluid">
-      <h1 class="text-left text-dark" style="font-weight: 700">
-        More Topics from NASA
-      </h1>
+      <h1 class="text-left text-dark fw-bold">More Topics from NASA</h1>
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card">
+            <div class="card position-relative">
               <img
                 src="https://www.nasa.gov/wp-content/uploads/2022/08/jsc2022e046413_orig.jpg?resize=1024,576"
                 class="card-img card-img2"
               />
-              <div class="card-text">
+              <div class="card-text position-absolute fw-bold text-light">
                 Missions <span class="arrow-icon">→</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card">
+            <div class="card position-relative">
               <img
                 src="https://www.nasa.gov/wp-content/uploads/2022/12/51476067951-e10dfb6875-o.jpg?resize=1024,683"
                 class="card-img"
               />
-              <div class="card-text">
+              <div class="card-text position-absolute fw-bold text-light">
                 Humans In Space <span class="arrow-icon">→</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card">
+            <div class="card position-relative">
               <img
                 src="https://science.nasa.gov/wp-content/uploads/2023/06/icescapepondsample-lrg-jpg.webp"
                 class="card-img"
               />
-              <div class="card-text">
+              <div class="card-text position-absolute fw-bold text-light">
                 Climate Ghange <span class="arrow-icon">→</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card">
+            <div class="card position-relative">
               <img
                 src="https://science.nasa.gov/wp-content/uploads/2023/06/solar-system-illustration-16x9-1.jpg"
                 class="card-img"
               />
-              <div class="card-text">
+              <div class="card-text position-absolute fw-bold text-light">
                 Our Solar System <span class="arrow-icon">→</span>
               </div>
             </div>
@@ -542,45 +603,45 @@
         <br />
         <div class="row">
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card">
+            <div class="card position-relative">
               <img
                 src="https://science.nasa.gov/wp-content/uploads/2023/09/ngc5068-1-flat-final.jpg"
                 class="card-img"
               />
-              <div class="card-text">
+              <div class="card-text position-absolute fw-bold text-light">
                 Universe <span class="arrow-icon">→</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card">
+            <div class="card position-relative">
               <img
                 src="https://science.nasa.gov/wp-content/uploads/2023/07/stsci-01h44ay5ztcv1npb227b2p650j-temp.png"
                 class="card-img"
               />
-              <div class="card-text">
+              <div class="card-text position-absolute fw-bold text-light">
                 Science News <span class="arrow-icon">→</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card">
+            <div class="card position-relative">
               <img
                 src="https://www.nasa.gov/wp-content/uploads/2022/12/aero-topic-card.jpg"
                 class="card-img"
               />
-              <div class="card-text">
+              <div class="card-text position-absolute fw-bold text-light">
                 Aeronautics <span class="arrow-icon">→</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-12">
-            <div class="card">
+            <div class="card position-relative">
               <img
                 src="https://www.nasa.gov/wp-content/uploads/2022/12/nasa_technology1.png"
                 class="card-img"
               />
-              <div class="card-text">
+              <div class="card-text position-absolute fw-bold text-light">
                 Technology <span class="arrow-icon">→</span>
               </div>
             </div>
@@ -590,13 +651,13 @@
     </div>
     <!-- نهاية سكشن الصور المستطيلة -->
 
-    <div class="container-fluid bg-black footerr">
+    <div class="container-fluid bg-black footerr ">
       <img src="logo.png" class="logo footer-logo" />
 
-      <footer class="bg-black text-white py-4">
-        <div class="container">
+      <footer class="container-fluid bg-black text-white py-4">
+        <div class="">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 ">
               <h5>National Aeronautics and Space Administration</h5>
               <br />
               <p class="text-secondary">
@@ -629,7 +690,7 @@
             </div>
             <div class="col-md-2">
               <p class="footer-p">Follow NASA</p>
-              <p class="flex-icon">
+              <p class="flex-icon d-flex gap-3">
                 <i class="fa-brands fa-facebook footer-icon"></i>
                 <i class="fa-brands fa-square-instagram footer-icon"></i>
                 <i class="fa-solid fa-x footer-icon"></i>
@@ -640,7 +701,7 @@
             </div>
           </div>
           <hr />
-          <div class="flex-footer-row text-secondary">
+          <div class="text-secondary d-flex flex-wrap gap-3">
             <p class="footer-p">Sitemap</p>
             <p class="footer-p">For Media</p>
             <p class="footer-p">Privacy Policy</p>
