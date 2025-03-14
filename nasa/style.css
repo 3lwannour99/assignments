@@ -3,167 +3,61 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-html,
-body {
+html,body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: #000000;
-  align-items: center;
-  padding: 15px;
-}
-
 .logo {
   width: 60px;
 }
-
-.right-side {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.left-side {
-  display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
-}
-
-.live {
-  color: white;
-  font-weight: 700;
-  padding: 0;
-  margin: 0;
+.live ,label,.text0, a ,a:hover,.text-right,.icon,.footer-icon:hover,.footer-p:hover,.card-text {
   cursor: pointer;
 }
 .livespan:hover {
   background-color: red;
 }
-
 select {
   width: fit-content;
   background: transparent;
-  border: none;
-  color: white;
-  font-weight: 700;
 }
-
-option {
-  color: black;
-}
-
 .search {
   background: transparent;
   border: 1px solid gray;
   height: 40px;
 }
-
 span {
-  color: white;
   border: 0.5px solid red;
   font-size: 12px;
-  font-weight: 1;
   letter-spacing: 2px;
 }
-
 .main {
   background-image: url(background.webp);
-  height: 100vh;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
+  height: 100vh;  
 }
-.describtion {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: start;
-  flex-direction: column;
-  margin-left: 20px;
-}
-
 .describtion-1 {
-  color: white;
-  font-size: 4.5rem;
-  font-weight: 700;
-
-  margin: 1px;
-  line-height: 1.2;
+  font-size: 4.5em;
 }
 .describtion-2 {
-  color: white;
   font-size: 15px;
 }
 .btn {
   font-size: 22px;
   font-weight: 900;
-  padding: 10px;
   background-color: #d93636;
 }
-
 .btn:hover {
   background-color: red;
 }
-
-.featured {
-  display: flex;
-  flex-direction: column;
-}
-
-.head-featured {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  padding-top: 60px;
-  padding-left: 65px;
-  padding-right: 60px;
-}
 .p1 {
   font-size: 50px;
-  font-weight: 700;
-  color: #000000;
 }
-
-.p2 {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 25px;
-  color: black;
-  cursor: pointer;
-}
-
 .pic-featured {
-  display: flex;
-  gap: 5px;
-  margin: 60px;
-  flex-wrap: wrap;
   max-width: 85rem;
 }
 img {
   width: 100%;
 }
-
-.pic0 {
-  display: flex;
-  justify-content: flex-start;
-  flex: 2 1 0%;
-  width: auto;
-  max-width: 100%;
-  min-width: 1px;
-  position: relative;
-}
+/* ما بدي استخدم البوتسراب عشان ما اكتب الكلاسات بكل تاغ  */
 .text0 {
   position: absolute;
   display: flex;
@@ -175,30 +69,7 @@ img {
   padding: 10px;
   font-size: 20px;
   font-weight: 700;
-  cursor: pointer;
 }
-.pic1 {
-  display: flex;
-  justify-content: flex-start;
-  flex: 1 1 0%;
-  width: auto;
-  max-width: 100%;
-  min-width: 1px;
-  position: relative;
-}
-.pic2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  flex: 1 1 0%;
-  width: auto;
-  max-width: 100%;
-  min-width: 1px;
-  position: relative;
-}
-/* ----------------------------------------- */
-
 .custom-img {
   width: 100px;
   height: 90px;
@@ -207,21 +78,11 @@ img {
 .card-title {
   font-size: 16px;
 }
-/* ------------------------- */
-
-.container2 {
-  background-color: black;
-  padding: 40px 20px;
-}
-
 .iframe0 {
-  position: relative;
   width: 100%;
   padding-bottom: 56.25%; /* نسبة 16:9 للفيديو */
-  height: 0;
   overflow: hidden;
 }
-
 .iframe0 iframe {
   position: absolute;
   top: 0;
@@ -229,39 +90,18 @@ img {
   width: 100%;
   height: 100%;
 }
-/* -------------------------- */
-a {
+a {/* عشان اختصر و اخلي كل اللينكات اسود و none decoration  */
   text-decoration: none;
   color: #000000;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-.section4 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 30px;
-}
-
-.card {
-  border: none;
-  position: relative;
 }
 .card-img {
   height: 400px;
   object-fit: cover;
 }
 .card-text {
-  position: absolute;
   bottom: 20px;
   left: 20px;
-  color: white;
   font-size: 30px;
-  font-weight: bold;
-  cursor: pointer;
 }
 .arrow-icon {
   background: red;
@@ -274,160 +114,57 @@ a:hover {
 .section5 {
   margin-bottom: 50px;
 }
-
 .section6 {
   background-image: url(pic5.jpg);
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
-  margin-bottom: 30px;
 }
-.text-res {
-  position: absolute;
-}
-
 /* image of the day */
-.center-con {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .img-uni {
   width: 550px;
 }
-.uni-image {
-  display: flex;
-  justify-content: center;
-}
-/* ------------------------------------ */
-.text-right {
-  text-align: right;
-  font-weight: 700;
-  cursor: pointer;
-  margin-right: 20px;
-  font-size: 20px;
-}
-
 .icon {
   color: rgb(28, 103, 227);
   font-size: 30px;
   padding: 20px;
-  cursor: pointer;
 }
-
-/* --------------------------------------- */
 .section-of-pics {
-  display: flex;
-  gap: 25px;
-  justify-content: center;
-  flex-wrap: wrap;
   min-width: 75px;
-}
-
-.pics {
-  display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
-  flex: 1;
 }
 .img-group {
   width: 200px;
-  flex: 1;
 }
-
-.col-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  flex-wrap: wrap;
-}
-.flex {
-  display: flex;
-  flex-direction: column;
-}
-
-.text {
-  display: flex;
-  flex-direction: column;
-}
-
 .section7 {
   background-image: url(stars-background.webp);
-  height: 90vh;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 30px;
-  position: relative;
+  height: 100vh;
   overflow: hidden;
 }
-
-.posit {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  position: absolute;
-  overflow: hidden;
-}
-.privacy {
-  text-decoration: dashed;
-}
-
 .text1 {
   font-size: 60px;
-  font-weight: bolder;
 }
-.text2 {
-  font-size: 25px;
-  font-weight: 700;
-  color: white;
-}
-
 label {
   font-size: 20px;
-  color: white;
   border-bottom: 1px dashed white;
-  cursor: pointer;
 }
 .card-img2 {
   border-radius: 0;
 }
-
 .footerr {
-  height: 80vh;
+  height: fit-content;
   margin-top: 30px;
 }
-
 .footer-logo {
-  margin-left: 100px;
+  margin-left: 10px;
   margin-top: 20px;
-}
-.flex-icon {
-  display: flex;
-  gap: 15px;
 }
 .footer-icon {
   font-size: 30px;
 }
 .footer-icon:hover {
   color: gray;
-  cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.3s;
 }
 .footer-p:hover {
   width: fit-content;
-  cursor: pointer;
   border-bottom: 1px dashed white; 
-}
-.flex-footer-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
 }
