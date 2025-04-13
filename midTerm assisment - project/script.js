@@ -141,7 +141,7 @@ function validate() {
     !tel.startsWith("07")
   ) {
     errorTel.textContent =
-      "*Phone number should contain exactly 10 digits & start with 07!";
+      "*Phone number should contain only 10 digits & start with 07!";
     valid = false;
   } else {
     errorTel.textContent = "";
