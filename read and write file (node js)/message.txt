@@ -1,0 +1,2 @@
+hello node js
+this is the first time i read a file using nods js i hope this is easy thank you
