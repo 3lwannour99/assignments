@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+main {
+  flex: 1;
+  min-height: 79vh;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+.edit,
+.create {
+  height: 100vh;
+}
+
+

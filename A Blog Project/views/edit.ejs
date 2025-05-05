@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container mt-5 d-flex justify-content-center align-items-center">
+  <div class="card shadow-lg p-4 w-100" style="max-width: 500px;">
+    <h4 class="mb-4 text-center text-primary">Edit Post</h4>
+    <form action="/edit/<%= index %>" method="POST">
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" id="title" name="title" class="form-control" value="<%= post.title %>" required>
+      </div>
+      <div class="mb-3">
+        <label for="comment" class="form-label">Comment</label>
+        <textarea id="comment" name="comment" class="form-control" rows="5" required><%= post.comment %></textarea>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-success">Save Changes</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<%- include("partials/footer.ejs") %>
