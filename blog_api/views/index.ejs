@@ -1,0 +1,65 @@
+<%- include("partials/header.ejs") %>
+<section class="green-section text-white py-5 d-flex">
+  <div class="green-section-child container text-center">
+    <h1 class="display-4 fw-bold text-start">
+      Life in<br />
+      love with<br />
+      plants
+    </h1>
+    <img
+      src="plant.png"
+      alt="plant"
+      class="img-fluid img"
+      style="max-height: 390px"
+    />
+    <p class="paragraph font-monospace text-start" style="max-height: 20px">
+      "Plants are mainly multicellular organisms,<br />
+      predominantly photosynthetic eukaryotes <br />
+      of thekingdom Plantae.<br />
+      Historically, plants were treated <br />
+      as one of two kingdoms including<br />
+      all living things that were not animals."
+    </p>
+  </div>
+</section>
+
+<div class="container my-5">
+  <div class="mb-5 text-end">
+    <a id="newPostBtn" href="/create-post" class="btn btn-success"
+      ><i class="fa-solid fa-square-plus text-white"></i> New Post</a
+    >
+  </div>
+
+    <ul id="postsList" class="list-unstyled ">
+      <% posts.forEach(post => { %>
+      <li class="mb-5 border-bottom pb-4 blog-post">
+        <h2 class="text-success mb-1"><%= post.title %></h2>
+        <small class="text-muted d-block mb-2 text-break"
+          ><%= post.date %> — by <%= post.author %></small
+        >
+        <p class="fs-5 lh-base text-break"><%= post.content %></p>
+
+        <div class="d-flex gap-2">
+          <a
+            class="btn btn-outline-success btn-sm text-black"
+            href="/edit-post/<%= post.id  %>"
+          >
+            <i class="fa-regular fa-pen-to-square text-black"></i> Edit</a
+          >
+          <a
+            class="btn btn-outline-danger btn-sm text-black"
+            href="/api/posts/delete/<%= post.id %>"
+            ><i class="fa-solid fa-trash text-black"></i> Delete</a
+          >
+        </div>
+      </li>
+      <% }); %>
+    </ul>
+  
+
+
+
+
+</div>
+
+<%- include("partials/footer.ejs") %>
